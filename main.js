@@ -1,12 +1,17 @@
+var secretNumber ;
+var guessedNumber;
+
 function start()
 {
-    var secretNumber = 1-100;
-    var guessedNumber;
+secretNumber = Math.floor(Math.random()*100)+1;
+console.log(secretNumber);
 }
 
 function guessButtonPressed()
 {
-    
+    var usersGuess = parseInt(document.querySelector(".guessField"))
+
+    console.log("Nappia painettu")
 }
 
 function isValidGuess(number)
